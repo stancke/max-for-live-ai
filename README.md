@@ -4,15 +4,18 @@ Crie efeitos, instrumentos e ferramentas MIDI para o Ableton Live a partir de um
 
 ## Comece pelo link
 
-Para criar seu plugin, basta colar este link em uma conversa no **Codex**, no **OpenCode** ou em outro agente com acesso ao GitHub.
+Copie o bloco inteiro e cole em uma conversa no **Codex**, no **OpenCode** ou em outro agente com acesso ao GitHub.
 
 ```text
+Abra este repositório e siga a skill maxforlive-plugins:
 https://github.com/stancke/max-for-live-ai
+
+Crie um delay para o Ableton Live que alterne os ecos entre esquerda e direita.
+Quero ajustar o tempo dos ecos, a quantidade de repetições e o volume do efeito.
+Entregue o arquivo .amxd e me diga como testar no Live.
 ```
 
-Na mesma mensagem, diga o que você quer criar e peça ao agente para seguir a skill do projeto. Ele pode abrir o repositório pelo link, ler a skill e consultar os exemplos. Depois, abra no Ableton Live o arquivo `.amxd` que o agente entregar.
-
-> Leia a skill deste repositório e crie um delay que alterne os ecos entre esquerda e direita. Entregue o arquivo .amxd e me diga como testar no Live.
+O agente pode abrir o repositório pelo link, ler a skill e consultar os exemplos. Depois, abra no Ableton Live o arquivo `.amxd` que ele entregar.
 
 ## Experimente os devices prontos
 
@@ -34,7 +37,7 @@ A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um g
 
 ## 5 prompts prontos para copiar
 
-Cole o [link do projeto](https://github.com/stancke/max-for-live-ai) junto com um dos pedidos abaixo. Ajuste os detalhes ao seu som e, se souber, acrescente a versão do seu Ableton Live.
+Para criar outro plugin, mantenha o link da [mensagem inicial](#comece-pelo-link) e troque o pedido por um dos exemplos abaixo. Se souber, acrescente a versão do seu Ableton Live.
 
 ### 1. Tremolo no tempo da música
 
