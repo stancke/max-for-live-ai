@@ -22,8 +22,6 @@ Para carregar os exemplos, você precisa do Live com suporte a Max for Live. O D
 
 A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um guia que o assistente lê enquanto trabalha. Ela vem com quatro exemplos e ensina a IA a montar o device, gerar o arquivo que o Live abre e explicar onde colocá-lo e como testá-lo. Você descreve o que quer ouvir ou fazer com o MIDI.
 
-> Use a skill maxforlive-plugins para criar um efeito que faça o volume pulsar no tempo da música. Quero um botão para ligar a sincronia com o BPM e um controle para escolher a intensidade. Entregue o arquivo para abrir no Live e me diga como testar.
-
 ## Use com Codex ou OpenCode
 
 1. Abra a pasta extraída no **Codex** ou no **OpenCode**.
@@ -34,6 +32,30 @@ A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um g
 Se o OpenCode não listar a skill ao abrir esta pasta, comece a conversa com “Leia `.agents/skills/maxforlive-plugins/SKILL.md` e siga as instruções para criar meu device.” Isso permite que o assistente leia o guia diretamente.
 
 Para usar a skill em outro projeto, copie a pasta inteira `maxforlive-plugins` para `.agents/skills/` na raiz do projeto de destino. Para ter acesso em todos os seus projetos, coloque-a em `.agents/skills/` dentro da sua pasta de usuário. No macOS, pressione **⌘ + Shift + .** no Finder para mostrar pastas que começam com ponto. Se a skill demorar a aparecer, reabra o assistente. [Guia do Codex](https://developers.openai.com/codex/skills) · [Guia do OpenCode](https://opencode.ai/docs/skills/)
+
+## 5 prompts prontos para copiar
+
+Escolha uma ideia, copie o pedido e ajuste os detalhes ao seu som. Se souber, acrescente a versão do seu Ableton Live.
+
+### 1. Tremolo no tempo da música
+
+> Use a skill maxforlive-plugins para criar um efeito de áudio estéreo que faça o volume pulsar no tempo da música. Quero escolher entre colcheias e semicolcheias e controlar a intensidade da pulsação. Entregue o arquivo .amxd e diga como testar com um loop de áudio.
+
+### 2. Delay que vai de um lado ao outro
+
+> Use a skill maxforlive-plugins para criar um delay com ecos que alternem entre esquerda e direita. Quero escolher o ritmo dos ecos, a quantidade de repetições e quanto do efeito se mistura ao som original. Entregue o arquivo .amxd e diga como testar com uma batida curta.
+
+### 3. Sintetizador para linhas de baixo
+
+> Use a skill maxforlive-plugins para criar um sintetizador de baixo que eu possa tocar com meu teclado MIDI ou com um clipe. Quero um som encorpado, uma nota por vez e controles para deixar o timbre mais fechado ou mais brilhante. Entregue o arquivo .amxd e diga como montar a faixa no Live.
+
+### 4. Gerador de grooves para Drum Rack
+
+> Use a skill maxforlive-plugins para criar um gerador de bateria com grooves de house e breakbeat. Quero escolher entre 1, 2 e 4 compassos e clicar em Gerar para criar um clipe no primeiro espaço vazio da faixa, preservando os clipes que já existem. Entregue o arquivo .amxd e explique como usar com um Drum Rack.
+
+### 5. Arpejador para transformar acordes em melodias
+
+> Use a skill maxforlive-plugins para criar um efeito MIDI que toque uma nota de cada vez quando eu segurar um acorde. Quero escolher se as notas sobem, descem ou alternam, e ajustar a velocidade no tempo da música. Ao soltar o acorde, o arpejo deve parar. Entregue o arquivo .amxd e diga onde colocá-lo na faixa.
 
 ## Para criar a partir dos exemplos
 
