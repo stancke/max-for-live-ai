@@ -4,7 +4,9 @@ Crie efeitos, instrumentos e ferramentas MIDI para o Ableton Live a partir de um
 
 ## Comece pelo link
 
-Copie o bloco inteiro e cole no **Codex** ou no **OpenCode** rodando na sua máquina e com acesso ao GitHub. A mensagem pede ao agente para instalar a skill uma vez, deixá-la disponível em futuras conversas e já criar seu primeiro plugin.
+Abra o **Codex** ou o **OpenCode** na sua máquina, com acesso ao GitHub, e envie os prompts abaixo como duas mensagens.
+
+### Prompt 1 · Instalar a skill
 
 ```text
 Primeiro, instale a skill maxforlive-plugins deste repositório no meu perfil
@@ -16,7 +18,13 @@ com as referências, os exemplos e o código, para ~/.agents/skills/maxforlive-p
 O ~ é a pasta do meu usuário no Windows ou no macOS. Se a skill já estiver
 instalada nesse local, reutilize-a. Confira se o SKILL.md está na pasta instalada
 e informe o caminho da instalação.
+```
 
+### Prompt 2 · Criar o delay
+
+Quando o agente confirmar a instalação, cole este prompt na mesma conversa.
+
+```text
 Em seguida, leia e siga o SKILL.md instalado nesta mesma conversa.
 Crie um delay para o Ableton Live que alterne os ecos entre esquerda e direita.
 Quero ajustar o tempo dos ecos, a quantidade de repetições e o volume do efeito.
@@ -45,7 +53,7 @@ A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um g
 
 ## 5 prompts prontos para copiar
 
-Para instalar a skill e começar com outro plugin, mantenha as instruções de instalação da [mensagem inicial](#comece-pelo-link) e troque o pedido do delay por um exemplo abaixo. Com a skill já instalada, você pode colar o exemplo diretamente. Se souber, acrescente a versão do seu Ableton Live.
+Com a skill instalada, você pode colar um dos exemplos abaixo no lugar do [prompt do delay](#prompt-2--criar-o-delay). Se souber, acrescente a versão do seu Ableton Live.
 
 ### 1. Tremolo no tempo da música
 
