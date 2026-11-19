@@ -31,6 +31,8 @@ A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um g
 3. Diga o que o device deve fazer e quais controles você quer. Se souber, informe sua versão do Live e do Max.
 4. Abra o arquivo gerado em um Set de teste e ouça o resultado. Se algo sair diferente, descreva o que aconteceu para o assistente ajustar.
 
+Se o OpenCode não listar a skill ao abrir esta pasta, comece a conversa com “Leia `.agents/skills/maxforlive-plugins/SKILL.md` e siga as instruções para criar meu device.” Isso permite que o assistente leia o guia diretamente.
+
 Para usar a skill em outro projeto, copie a pasta inteira `maxforlive-plugins` para `.agents/skills/` na raiz do projeto de destino. Para ter acesso em todos os seus projetos, coloque-a em `.agents/skills/` dentro da sua pasta de usuário. No macOS, pressione **⌘ + Shift + .** no Finder para mostrar pastas que começam com ponto. Se a skill demorar a aparecer, reabra o assistente. [Guia do Codex](https://developers.openai.com/codex/skills) · [Guia do OpenCode](https://opencode.ai/docs/skills/)
 
 ## Para criar a partir dos exemplos
