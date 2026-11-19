@@ -4,18 +4,26 @@ Crie efeitos, instrumentos e ferramentas MIDI para o Ableton Live a partir de um
 
 ## Comece pelo link
 
-Copie o bloco inteiro e cole em uma conversa no **Codex**, no **OpenCode** ou em outro agente com acesso ao GitHub.
+Copie o bloco inteiro e cole no **Codex** ou no **OpenCode** rodando na sua máquina e com acesso ao GitHub. A mensagem pede ao agente para instalar a skill uma vez, deixá-la disponível em futuras conversas e já criar seu primeiro plugin.
 
 ```text
-Abra este repositório e siga a skill maxforlive-plugins:
+Primeiro, instale a skill maxforlive-plugins deste repositório no meu perfil
+de usuário, para que ela continue disponível depois de fechar o agente:
 https://github.com/stancke/max-for-live-ai
 
+Copie a pasta inteira .agents/skills/maxforlive-plugins do repositório,
+com as referências, os exemplos e o código, para ~/.agents/skills/maxforlive-plugins.
+O ~ é a pasta do meu usuário no Windows ou no macOS. Se a skill já estiver
+instalada nesse local, reutilize-a. Confira se o SKILL.md está na pasta instalada
+e informe o caminho da instalação.
+
+Em seguida, leia e siga o SKILL.md instalado nesta mesma conversa.
 Crie um delay para o Ableton Live que alterne os ecos entre esquerda e direita.
 Quero ajustar o tempo dos ecos, a quantidade de repetições e o volume do efeito.
 Entregue o arquivo .amxd e me diga como testar no Live.
 ```
 
-O agente pode abrir o repositório pelo link, ler a skill e consultar os exemplos. Depois, abra no Ableton Live o arquivo `.amxd` que ele entregar.
+Depois, abra no Ableton Live o arquivo `.amxd` que o agente entregar.
 
 ## Experimente os devices prontos
 
@@ -37,7 +45,7 @@ A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um g
 
 ## 5 prompts prontos para copiar
 
-Para criar outro plugin, mantenha o link da [mensagem inicial](#comece-pelo-link) e troque o pedido por um dos exemplos abaixo. Se souber, acrescente a versão do seu Ableton Live.
+Para instalar a skill e começar com outro plugin, mantenha as instruções de instalação da [mensagem inicial](#comece-pelo-link) e troque o pedido do delay por um exemplo abaixo. Com a skill já instalada, você pode colar o exemplo diretamente. Se souber, acrescente a versão do seu Ableton Live.
 
 ### 1. Tremolo no tempo da música
 
@@ -59,9 +67,9 @@ Para criar outro plugin, mantenha o link da [mensagem inicial](#comece-pelo-link
 
 > Use a skill maxforlive-plugins para criar um efeito MIDI que toque uma nota de cada vez quando eu segurar um acorde. Quero escolher se as notas sobem, descem ou alternam, e ajustar a velocidade no tempo da música. Ao soltar o acorde, o arpejo deve parar. Entregue o arquivo .amxd e diga onde colocá-lo na faixa.
 
-## Instalação opcional da skill
+## Instalação manual da skill
 
-Se você pretende usar a skill com frequência, pode instalá-la no Codex ou no OpenCode. Copie a pasta inteira [maxforlive-plugins](.agents/skills/maxforlive-plugins/) para `.agents/skills/` na raiz do seu projeto. Para ter acesso em todos os projetos, coloque-a em `.agents/skills/` dentro da sua pasta de usuário. No macOS, pressione **⌘ + Shift + .** no Finder para mostrar pastas que começam com ponto. Se a skill demorar a aparecer, reabra o assistente. [Guia do Codex](https://developers.openai.com/codex/skills) · [Guia do OpenCode](https://opencode.ai/docs/skills/)
+Para instalar a skill manualmente, copie a pasta inteira [maxforlive-plugins](.agents/skills/maxforlive-plugins/) para `.agents/skills/` dentro da sua pasta de usuário. Se quiser usá-la só em um projeto, copie para `.agents/skills/` na raiz dele. No macOS, pressione **⌘ + Shift + .** no Finder para mostrar pastas que começam com ponto. Se a skill demorar a aparecer, reabra o assistente. [Guia do Codex](https://developers.openai.com/codex/skills) · [Guia do OpenCode](https://opencode.ai/docs/skills/)
 
 No Codex, mencione `$maxforlive-plugins`. No OpenCode, peça para usar a skill `maxforlive-plugins`. Se ela não aparecer na lista, peça ao agente para ler o arquivo `SKILL.md` dentro da pasta que você copiou.
 
