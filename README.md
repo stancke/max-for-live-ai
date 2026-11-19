@@ -2,11 +2,21 @@
 
 Crie efeitos, instrumentos e ferramentas MIDI para o Ableton Live a partir de uma ideia musical. Este projeto reúne devices prontos para experimentar e uma **skill** que orienta o Codex ou o OpenCode a criar e adaptar seus próprios devices.
 
-## Experimente no Ableton Live
+## Comece pelo link
 
-1. No GitHub, clique em **Code → Download ZIP** e extraia a pasta.
-2. Abra a pasta [dist](dist/) do projeto.
-3. Arraste o arquivo `.amxd` para uma faixa no Live. Se o exemplo tiver um arquivo `.js` ou outro recurso junto dele, mantenha os arquivos na mesma pasta.
+Para criar seu plugin, basta colar este link em uma conversa no **Codex**, no **OpenCode** ou em outro agente com acesso ao GitHub.
+
+```text
+https://github.com/stancke/max-for-live-ai
+```
+
+Na mesma mensagem, diga o que você quer criar e peça ao agente para seguir a skill do projeto. Ele pode abrir o repositório pelo link, ler a skill e consultar os exemplos. Depois, abra no Ableton Live o arquivo `.amxd` que o agente entregar.
+
+> Leia a skill deste repositório e crie um delay que alterne os ecos entre esquerda e direita. Entregue o arquivo .amxd e me diga como testar no Live.
+
+## Experimente os devices prontos
+
+A pasta [dist](dist/) reúne os exemplos para quem quiser experimentá-los no Live. Escolha um device, baixe o respectivo arquivo `.amxd` e arraste-o para a faixa indicada. Se ele vier com um arquivo `.js` ou outro recurso, mantenha esses arquivos juntos.
 
 | Quero experimentar… | Device | Onde colocar |
 | --- | --- | --- |
@@ -22,20 +32,9 @@ Para carregar os exemplos, você precisa do Live com suporte a Max for Live. O D
 
 A [skill maxforlive-plugins](.agents/skills/maxforlive-plugins/SKILL.md) é um guia que o assistente lê enquanto trabalha. Ela vem com quatro exemplos e ensina a IA a montar o device, gerar o arquivo que o Live abre e explicar onde colocá-lo e como testá-lo. Você descreve o que quer ouvir ou fazer com o MIDI.
 
-## Use com Codex ou OpenCode
-
-1. Abra a pasta extraída no **Codex** ou no **OpenCode**.
-2. No Codex, mencione `$maxforlive-plugins`. No OpenCode, comece com “Use a skill maxforlive-plugins”.
-3. Diga o que o device deve fazer e quais controles você quer. Se souber, informe sua versão do Live e do Max.
-4. Abra o arquivo gerado em um Set de teste e ouça o resultado. Se algo sair diferente, descreva o que aconteceu para o assistente ajustar.
-
-Se o OpenCode não listar a skill ao abrir esta pasta, comece a conversa com “Leia `.agents/skills/maxforlive-plugins/SKILL.md` e siga as instruções para criar meu device.” Isso permite que o assistente leia o guia diretamente.
-
-Para usar a skill em outro projeto, copie a pasta inteira `maxforlive-plugins` para `.agents/skills/` na raiz do projeto de destino. Para ter acesso em todos os seus projetos, coloque-a em `.agents/skills/` dentro da sua pasta de usuário. No macOS, pressione **⌘ + Shift + .** no Finder para mostrar pastas que começam com ponto. Se a skill demorar a aparecer, reabra o assistente. [Guia do Codex](https://developers.openai.com/codex/skills) · [Guia do OpenCode](https://opencode.ai/docs/skills/)
-
 ## 5 prompts prontos para copiar
 
-Escolha uma ideia, copie o pedido e ajuste os detalhes ao seu som. Se souber, acrescente a versão do seu Ableton Live.
+Cole o [link do projeto](https://github.com/stancke/max-for-live-ai) junto com um dos pedidos abaixo. Ajuste os detalhes ao seu som e, se souber, acrescente a versão do seu Ableton Live.
 
 ### 1. Tremolo no tempo da música
 
@@ -56,6 +55,12 @@ Escolha uma ideia, copie o pedido e ajuste os detalhes ao seu som. Se souber, ac
 ### 5. Arpejador para transformar acordes em melodias
 
 > Use a skill maxforlive-plugins para criar um efeito MIDI que toque uma nota de cada vez quando eu segurar um acorde. Quero escolher se as notas sobem, descem ou alternam, e ajustar a velocidade no tempo da música. Ao soltar o acorde, o arpejo deve parar. Entregue o arquivo .amxd e diga onde colocá-lo na faixa.
+
+## Instalação opcional da skill
+
+Se você pretende usar a skill com frequência, pode instalá-la no Codex ou no OpenCode. Copie a pasta inteira [maxforlive-plugins](.agents/skills/maxforlive-plugins/) para `.agents/skills/` na raiz do seu projeto. Para ter acesso em todos os projetos, coloque-a em `.agents/skills/` dentro da sua pasta de usuário. No macOS, pressione **⌘ + Shift + .** no Finder para mostrar pastas que começam com ponto. Se a skill demorar a aparecer, reabra o assistente. [Guia do Codex](https://developers.openai.com/codex/skills) · [Guia do OpenCode](https://opencode.ai/docs/skills/)
+
+No Codex, mencione `$maxforlive-plugins`. No OpenCode, peça para usar a skill `maxforlive-plugins`. Se ela não aparecer na lista, peça ao agente para ler o arquivo `SKILL.md` dentro da pasta que você copiou.
 
 ## Para criar a partir dos exemplos
 
