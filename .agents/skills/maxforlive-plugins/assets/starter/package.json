@@ -1,0 +1,16 @@
+{
+  "name": "max-for-live",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fábrica de devices Max for Live em JavaScript puro (sem dependências).",
+  "scripts": {
+    "build": "node build.js",
+    "list": "node build.js --list",
+    "inspect": "node tools/inspect.js",
+    "validate": "node tools/validate.js",
+    "test:acid": "node tools/test-acid.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,9 @@
+# Live API e clipes MIDI
+
+- Espere o device estar pronto com `live.thisdevice`. Crie e use `LiveAPI` em baixa prioridade, após `deferlow` quando necessário. Em JavaScript, instancie `LiveAPI` dentro de uma função executada pelo patch. Verifique na documentação se a versão de destino suporta `v8` e os métodos do Live Object Model usados.
+- Para atingir a faixa do próprio device, comece em `this_device canonical_parent` e suba até um `Track` válido. Considere que o device pode estar dentro de um Rack. Defina quando o destino deve ser a faixa do device ou a seleção do usuário.
+- Para um gerador de Session View, confirme que a faixa aceita MIDI, que o slot existe e está vazio. Calcule as notas e valide seus limites antes de chamar `create_clip`, com comprimento em batidas. Resolva o objeto `Clip` do slot após a criação e chame `add_new_notes` com o formato documentado. Informe se o comprimento assume 4/4 ou acompanha o compasso da música.
+- Se não houver slot disponível, mostre o motivo na interface. Se uma falha acontecer após a criação, identifique o slot que pode ter ficado com um clipe parcial e informe o usuário. Ao editar um clipe existente sob solicitação, confirme o alvo e preserve as notas e propriedades fora do escopo da edição.
+- Mantenha a composição de notas separada das chamadas ao host. Isso permite testar escala, duração, velocity e aleatoriedade em Node.js. Use o console para detalhes técnicos e feedback curto no device para sucesso ou falha.
+
+Exemplo completo em [Drum Generator](../assets/starter/devices/m4l-drum-generator.js) e seu [runtime](../assets/starter/src/m4l-drum-generator-runtime.js). Consulte as referências oficiais de [LiveAPI](https://docs.cycling74.com/apiref/js/liveapi/), [Live Object Model](https://docs.cycling74.com/apiref/lom/), [ClipSlot](https://docs.cycling74.com/apiref/lom/clipslot/) e [Clip](https://docs.cycling74.com/apiref/lom/clip/).
