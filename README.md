@@ -68,4 +68,4 @@ O projeto inicial da skill roda no Windows e no macOS com **Node.js 18 ou superi
 
 Os testes disponíveis conferem a estrutura dos arquivos e simulam parte da geração de clipes. A resposta dos controles, o áudio e o MIDI precisam ser conferidos no Live.
 
-*“Grande Scott!”* — De Volta para o Futuro
+*“Todos esses momentos se perderão no tempo, como lágrimas na chuva.”* — Roy Batty, *Blade Runner* (1982)
